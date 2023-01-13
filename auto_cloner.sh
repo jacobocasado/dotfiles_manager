@@ -17,9 +17,13 @@ cp -r ~/.config/rofi .config/rofi
 # febh
 cp ~/.fehbg .fehbg
 # Alacritty
-cp ~/.config/alacritty .config/alacritty
+cp ~/.config/alacritty/alacritty.yml .config/alacritty
 # Wallpaper
 cp -r ~/.wallpaper .wallpaper
+
+git add .
+git commit -m "New config added"
+git push
 
 echo  "Done! Grab some wallpaper and run pywal -i filename to set your color scheme. To have the wallpaper set on every boot edit ~.fehbg"
 
